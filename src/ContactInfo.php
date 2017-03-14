@@ -1,24 +1,22 @@
 <?php
 class ContactInfo
 {
-    public $phone;
+    public $postername;
     public $email;
-    public $address;
 
-    function __construct($user_phone, $user_email, $user_address)
+    function __construct($user_name, $user_email)
     {
-      $this->phone = $user_phone;
+      $this->postername = $user_name;
       $this->email = $user_email;
-      $this->address = $user_address;
     }
 
-    function setContactPhone($new_phone)
+    function setContactName($new_user_name)
     {
-      $this->phone = $user_phone;
+      $this->postername = $user_name;
     }
-    function getContactPhone()
+    function getContactName()
     {
-      return $this->phone;
+      return $this->postername;
     }
     function setContactEmail($new_email)
     {
@@ -27,14 +25,6 @@ class ContactInfo
     function getContactEmail()
     {
       return $this->email;
-    }
-    function setContactAddress($new_address)
-    {
-      $this->address = $user_address;
-    }
-    function getContactAddress()
-    {
-      return $this->address;
     }
 }
 
